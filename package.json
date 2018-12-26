@@ -1,0 +1,19 @@
+{
+  "name": "spassky.tech",
+  "version": "1.0.0",
+  "description": "my business web-page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxSpass/spassky.tech.git"
+  },
+  "author": "Max Spassky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxSpass/spassky.tech/issues"
+  },
+  "homepage": "https://github.com/MaxSpass/spassky.tech#readme"
+}
