@@ -1,22 +1,75 @@
-body,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     width: 100%;
     height: 100%;
-    background: url('../img/banner.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-body {
+#app, body {
+    height: inherit;
+}
+
+.wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: inherit;
+    background: #fc00ff;
+    background: -webkit-linear-gradient(to right, #fc00ff, #00dbde);
+    background: linear-gradient(to right, #fc00ff, #00dbde);
+    overflow: hidden;
+    /*background: url('../img/banner.jpg');*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
 }
 
-a {
-    display: inline-block;
-    padding: 1.5em;
+.header {
+    display: flex;
+}
+
+.header-right {
+    margin-left: auto;
+}
+
+.footer {
+    padding: 15px;
     background: #fff;
-    color: #000;
-    font-size: 35px;
+    margin-top: auto;
+}
+
+.particle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    /*height: inherit;*/
+}
+
+.icon-wrap .icon-svg:not(:last-child){
+    margin-right: 15px;
+}
+
+.icon-svg {
+    display: inline-block;
+}
+
+.icon-svg svg {
+    transition: all .3s ease;
+}
+
+.icon-svg.github:hover svg{
+    fill: #181717
+}
+
+.icon-svg.linkedin:hover svg{
+    fill: #0077B5
+}
+
+.icon-svg.facebook:hover svg{
+    fill: #3B5998
 }
